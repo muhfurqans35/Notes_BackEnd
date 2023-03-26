@@ -6,4 +6,4 @@ icacls.exe $path /GRANT:R "$($env:USERNAME):(R)"
 # Disable inheritance and remove inherited permissions
 icacls.exe $path /inheritance:r
 
-ssh -i "notes-api-webserver.pem" ubuntu@ec2-13-213-61-6.ap-southeast-1.compute.amazonaws.com
+ ssh -i "notes-api-webserver.pem" ubuntu@ec2-54-251-85-145.ap-southeast-1.compute.amazonaws.com
