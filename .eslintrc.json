@@ -11,6 +11,8 @@
   },
   "rules": {
     "no-console": "off",
-    "allowAfterThis": "on"
+    "no-underscore-dangle": "off",
+    "import/no-extraneous-dependencies": "off",
+    "camelcase": "off"
   }
 }

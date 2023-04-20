@@ -9,8 +9,7 @@ class AuthenticationsHandler {
 
     this.postAuthenticationHandler = this.postAuthenticationHandler.bind(this);
     this.putAuthenticationHandler = this.putAuthenticationHandler.bind(this);
-    this.deleteAuthenticationHandler =
-      this.deleteAuthenticationHandler.bind(this);
+    this.deleteAuthenticationHandler = this.deleteAuthenticationHandler.bind(this);
   }
 
   async postAuthenticationHandler(request, h) {
@@ -20,7 +19,7 @@ class AuthenticationsHandler {
       const { username, password } = request.payload;
       const id = await this._usersService.verifyUserCredential(
         username,
-        password
+        password,
       );
 
       const accessToken = this._tokenManager.generateAccessToken({ id });
