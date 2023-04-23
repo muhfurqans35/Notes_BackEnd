@@ -4,3 +4,4 @@ aws
 .env
 .prod.env
 muhfurqans35_credentials.csv
+src/api/uploads/file
